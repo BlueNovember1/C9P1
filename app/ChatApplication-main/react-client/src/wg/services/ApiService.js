@@ -3,7 +3,7 @@ import http from '../../http.interceptor';  // Zaimportuj instancję API
 
 class ApiService {
     constructor() {
-        this.apiBaseUrl = 'https://44.202.57.192:8080/api'; // Przykładowa baza URL (zmień na swoją)
+        this.apiBaseUrl = 'https://52.72.7.104:8080/api'; 
     }
 
     // Funkcja do pobierania wszystkich użytkowników

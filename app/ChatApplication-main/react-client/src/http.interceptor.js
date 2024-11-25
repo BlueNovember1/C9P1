@@ -3,14 +3,14 @@ import { fetchAuthSession } from 'aws-amplify/auth';
 
 // Tworzenie instancji axios
 const http = axios.create({
-    baseURL: 'https://44.202.57.192:8080/api',
+    baseURL: 'https://52.72.7.104:8080/api',
     withCredentials: true,
 });
 
 // Interceptor do dodawania tokenu do nagłówków
 http.interceptors.request.use(
     async (config) => {
-        const apiBaseUrl = 'https://44.202.57.192:8080/api';
+        const apiBaseUrl = 'https://52.72.7.104:8080/api';
 
         // Jeśli URL nie pasuje, kontynuuj bez modyfikowania nagłówków
         if (!config.url.startsWith(apiBaseUrl)) {

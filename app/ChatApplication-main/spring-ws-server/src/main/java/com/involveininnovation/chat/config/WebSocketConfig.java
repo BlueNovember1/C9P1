@@ -62,7 +62,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         var corsConfiguration = new org.springframework.web.cors.CorsConfiguration();
-        corsConfiguration.addAllowedOrigin("https://44.203.5.41:3000");
+        corsConfiguration.addAllowedOrigin("https://54.204.7.176:3000");
         corsConfiguration.addAllowedMethod("*");
         corsConfiguration.addAllowedHeader("*");
         corsConfiguration.setAllowCredentials(true);

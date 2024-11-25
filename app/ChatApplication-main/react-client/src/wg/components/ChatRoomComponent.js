@@ -72,7 +72,7 @@ const ChatRoomComponent = () => {
     }, [userData]);
 
     const connect = () => {
-        let Sock = new SockJS('https://44.202.57.192:8080/ws');
+        let Sock = new SockJS('https://52.72.7.104:8080/ws');
         stompClient = over(Sock);
         stompClient.connect({}, onConnected, onError);
     }
